@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<%-include("partials/head")%>
+<html lang="en">
+  <body>
+    <header class="homeHeader">
+      <%- include("partials/nav_bar")%>
+      <h1>¡Disfruta tus <strong>eventos</strong> con nosotros!</h1>
+    </header>
+
+    <main>
+      <section class="preview-aboutUs">
+        <div class="container">
+          <div class="image"></div>
+          <div class="history">
+            <h2>Emprendimiento con corazón</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+              odit rem. Expedita ab explicabo illum, corporis tenetur
+              perferendis, cupiditate, excepturi consectetur mollitia
+              perspiciatis ipsa quia quas corrupti praesentium unde ipsum?<br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+              eligendi soluta fugiat beatae incidunt velit provident repellat
+              laborum non eum. Voluptatem culpa porro autem accusantium
+              repudiandae rem ullam odio. Eligendi.
+            </p>
+            <a href="/aboutUs">Ver más</a>
+          </div>
+        </div>
+      </section>
+      <section class="preview-services" id="services">
+        <div class="container">
+          <div class="institutional">
+            <h2>Eventos institucionales</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+              odit rem. Expedita ab explicabo illum, corporis tenetur
+              perferendis, cupiditate, excepturi consectetur mollitia
+              perspiciatis ipsa quia quas corrupti praesentium unde ipsum?
+            </p>
+            <button type="submit" class="button-institutional-events">
+              Ver servicio
+            </button>
+            <div class="modal-institutional modal-container">
+              <div class="modal-title">
+                <div class="title">EVENTOS INSTITUCIONALES</div>
+                <span class="close-modal">X</span>
+              </div>
+
+              <div class="modal-image">
+                <img
+                  src="./images/userExperiencePhotos/Avatar1.PNG"
+                  alt="User1"
+                />
+              </div>
+
+              <div class="modal-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, quia ad! Vel accusantium ad eos, inventore officia
+                eveniet sint tempora distinctio non pariatur perspiciatis
+                voluptas repellat excepturi. Eum, aspernatur cupiditate.
+              </div>
+            </div>
+          </div>
+          <div class="personal-events">
+            <h2>Eventos personalizados</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+              odit rem. Expedita ab explicabo illum, corporis tenetur
+              perferendis, cupiditate, excepturi consectetur mollitia
+              perspiciatis ipsa quia quas corrupti praesentium unde ipsum?
+            </p>
+            <button type="submit" class="button-personal-events">
+              Ver servicio
+            </button>
+            <div class="modal-personal modal-container">
+              <div class="modal-title">
+                <div class="title">EVENTOS PERSONALIZADOS</div>
+                <span class="close-modal">X</span>
+              </div>
+
+              <div class="modal-image">
+                <img
+                  src="./images/userExperiencePhotos/Avatar1.PNG"
+                  alt="User1"
+                />
+              </div>
+
+              <div class="modal-paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusantium, quia ad! Vel accusantium ad eos, inventore officia
+                eveniet sint tempora distinctio non pariatur perspiciatis
+                voluptas repellat excepturi. Eum, aspernatur cupiditate.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="preview-references"></section> -->
+
+      <section class="preview-experiences" id="experiences">
+        <div class="container-experiences">
+          <div class="userExperience">
+            <img src="./images/userExperiencePhotos/Avatar1.PNG" alt="User1" />
+            <p>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+              blanditiis iure accusamus, ab maiores neque fugit tempore
+              molestiae, voluptate laudantium autem voluptates fuga quia.
+              Ratione ea impedit eligendi maiores asperiores?"
+            </p>
+          </div>
+          <div class="userExperience">
+            <img src="./images/userExperiencePhotos/Avatar2.PNG" alt="User2" />
+            <p>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+              blanditiis iure accusamus, ab maiores neque fugit tempore
+              molestiae, voluptate laudantium autem voluptates fuga quia.
+              Ratione ea impedit eligendi maiores asperiores?"
+            </p>
+          </div>
+          <div class="userExperience">
+            <img src="./images/userExperiencePhotos/Avatar3.PNG" alt="User3" />
+            <p>
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+              blanditiis iure accusamus, ab maiores neque fugit tempore
+              molestiae, voluptate laudantium autem voluptates fuga quia.
+              Ratione ea impedit eligendi maiores asperiores?"
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <%- include("partials/footer")%>
+
+    <script src="./js/events.js"></script>
+  </body>
+</html>

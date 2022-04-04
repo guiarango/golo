@@ -1,0 +1,37 @@
+.about-us {
+  background-color: rgba($color-primary, 1);
+  &__container {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-primary, 1),
+        rgba($color-white, 0.3),
+        rgba($color-primary, 1)
+      ),
+      url("/images/dessert-2.jpg");
+    background-size: cover;
+    margin: auto;
+    height: $section-height;
+    width: $section-width;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    &--text {
+      position: absolute;
+      display: block;
+      background-color: rgba($color-white, 0.7);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &--main-title {
+      padding-top: 3rem;
+    }
+    &--main-title span {
+      font-size: 5rem;
+    }
+    &--main-paragraph {
+      font-size: 2rem;
+      margin: 3rem 10rem;
+    }
+  }
+}

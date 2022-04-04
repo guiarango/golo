@@ -1,0 +1,37 @@
+.homeHeader {
+  position: relative;
+  color: $color-white;
+  height: 50vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-primary, 0.4) 0%,
+      rgba($color-primary, 0.4) 100%
+    ),
+    url("/images/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-weight: 200;
+  }
+}
+
+@media (min-width: 700px) {
+  .homeHeader {
+    height: $header-height;
+    width: $header-width;
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}

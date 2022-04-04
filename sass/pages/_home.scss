@@ -1,0 +1,347 @@
+.preview-aboutUs,
+.preview-services,
+.preview-references,
+.preview-experiences {
+  padding: 3rem 0;
+  // height: $section-height;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.preview-aboutUs {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 50%;
+    width: 100%;
+    margin: auto;
+
+    .history {
+      display: flex;
+      flex-direction: column;
+      height: 50%;
+      width: 100%;
+      padding: 1rem 2rem;
+      text-align: center;
+
+      h2,
+      p,
+      a {
+        letter-spacing: 1.2px;
+      }
+
+      h2 {
+        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+      a {
+        background-color: $color-primary;
+        color: $color-secondary;
+        padding: 2rem;
+        font-size: 2.5rem;
+        text-decoration: none;
+      }
+    }
+    .image {
+      display: none;
+    }
+  }
+}
+
+.preview-services {
+  .container {
+    display: flex;
+    // padding: 1rem;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+    margin: auto;
+
+    .institutional {
+      background-color: $color-secondary;
+      .button-institutional-events {
+        background-color: $color-primary;
+        color: $color-white;
+      }
+    }
+    .personal-events {
+      background-color: $color-primary;
+      color: $color-white;
+
+      .button-personal-events {
+        background-color: $color-secondary;
+        color: $color-black;
+      }
+    }
+
+    .institutional,
+    .personal-events {
+      display: flex;
+      flex-direction: column;
+      height: 50%;
+      width: 100%;
+      padding: 5rem 2rem 7rem 2rem;
+      text-align: center;
+
+      .modal-institutional,
+      .modal-personal {
+        top: 50%;
+        left: 50%;
+        padding: 10px;
+        transform: translate(-50%, -50%);
+        margin: auto;
+        position: fixed;
+        display: none;
+        width: 80%;
+        height: 90%;
+        color: $color-white;
+        border: solid 5px $color-white;
+        background-color: $color-primary;
+        z-index: 1000;
+        .modal-title {
+          display: flex;
+          justify-content: space-between;
+          font-size: 2rem;
+
+          .title {
+            width: 100%;
+            justify-self: center;
+          }
+
+          .close-modal {
+            transition: 0.2s;
+            &:hover {
+              transform: scale(1.2);
+              cursor: pointer;
+            }
+          }
+        }
+
+        .modal-image {
+          padding: 50px;
+        }
+
+        .modal-paragraph {
+          font-size: 1.5rem;
+          letter-spacing: 1px;
+        }
+      }
+
+      h2,
+      p,
+      a {
+        letter-spacing: 1.2px;
+      }
+
+      h2 {
+        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+      }
+      p {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+      }
+      .button-institutional-events,
+      .button-personal-events {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 1rem;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.preview-experiences {
+  padding-bottom: 1rem !important;
+  .container-experiences {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+
+    .userExperience {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: center;
+      background-color: rgba($color-primary, 0.5);
+      border: solid 1px $color-white;
+      padding: 1rem;
+      transition: 0.2s;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+      img {
+        margin: 1rem auto;
+        border-radius: 50%;
+        width: 13rem;
+        height: auto;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // .userPhoto {
+  //   width: 50%;
+  //   height: auto;
+  // }
+  // .carrouselItem {
+  //   // margin: auto;
+  //   // height: 40rem;
+  // }
+  // .glide__arrows > * {
+  //   color: $color-black;
+  //   border-color: $color-black;
+  // }
+}
+
+@media (min-width: 700px) {
+  .preview-aboutUs,
+  .preview-services,
+  .preview-references {
+    padding: 3rem 0;
+    height: $section-height;
+  }
+
+  .preview-aboutUs {
+    .container {
+      flex-direction: row;
+      align-items: center;
+      height: 100%;
+      width: 80%;
+      .history {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 60%;
+        text-align: center;
+        h2 {
+          font-size: 2.3rem;
+        }
+        p {
+          font-size: 1.8rem;
+        }
+        a {
+          padding: 1.5rem;
+          font-size: 1.8rem;
+          &:hover {
+            color: $color-white;
+            transform: translate(2px, -2px);
+          }
+        }
+      }
+      .image {
+        display: block;
+        height: 100%;
+        width: 40%;
+        background-image: linear-gradient(
+            to right,
+            rgba($color-primary, 0.1) 0%,
+            rgba($color-primary, 0.2) 50%,
+            rgba($color-primary, 0.1) 100%
+          ),
+          url("/images/chefs.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &:hover {
+          filter: blur(0.8px);
+        }
+      }
+    }
+  }
+
+  .preview-services {
+    padding: 0 5vw;
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      width: 100%;
+      margin: auto;
+
+      .institutional,
+      .personal-events {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        padding: 5rem 2rem 7rem 2rem;
+        background-color: $color-primary;
+        color: $color-white;
+        border: solid 1px $color-secondary;
+        transition: 0.4s;
+
+        .modal-institutional,
+        .modal-personal {
+          .modal-title {
+            font-size: 3rem;
+          }
+        }
+        .button-personal-events,
+        .button-institutional-events {
+          background-color: $color-secondary;
+          color: $color-black;
+
+          &:hover {
+            transform: translate(2px, -2px);
+          }
+        }
+        &:hover {
+          background-color: $color-secondary;
+          color: black;
+
+          .button-personal-events,
+          .button-institutional-events {
+            background-color: $color-primary;
+            color: $color-white;
+            cursor: pointer;
+          }
+        }
+
+        h2,
+        p,
+        a {
+          letter-spacing: 1.2px;
+        }
+
+        h2 {
+          margin-bottom: 1.5rem;
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1.8rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+  }
+
+  .preview-experiences {
+    padding-bottom: 1rem !important;
+    .container-experiences {
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      .userExperience {
+        img {
+          width: 15rem;
+        }
+      }
+    }
+  }
+}
